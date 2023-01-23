@@ -19,7 +19,7 @@ WorkingMode_router = routers.SimpleRouter()
 WorkingMode_router.register(r'workingModes', WorkingModeSet)
 
 AccessPoint_router = routers.SimpleRouter()
-AccessPoint_router.register(r'AccessPoint', AccessPointSet)
+AccessPoint_router.register(r'assessPoints', AccessPointSet)
 
 urlpatterns = [
     path('', include(cam_router.urls)),
