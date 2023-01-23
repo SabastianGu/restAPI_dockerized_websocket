@@ -26,3 +26,12 @@ class CarParkItemSerializers(serializers.ModelSerializer):
         model = CarParkItem
         fields = "__all__"
 
+class WorkingModeSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = WorkingMode
+        fields = "__all__"
+
+class AccessPointSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = AccessPoint
+        fields = "__all__"

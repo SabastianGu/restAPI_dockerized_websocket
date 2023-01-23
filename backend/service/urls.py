@@ -15,6 +15,12 @@ BlackListItem_router.register(r'blackList', BlackListItemSet)
 CarParkItem_router = routers.SimpleRouter()
 CarParkItem_router.register(r'carPark', CarParkItemSet)
 
+WorkingMode_router = routers.SimpleRouter()
+WorkingMode_router.register(r'workingModes', WorkingModeSet)
+
+AccessPoint_router = routers.SimpleRouter()
+AccessPoint_router.register(r'AccessPoint', AccessPointSet)
+
 urlpatterns = [
     path('', include(cam_router.urls)),
     path('', include(Laurent2_router.urls)),
@@ -22,4 +28,6 @@ urlpatterns = [
     path('', include(BlackListItem_router.urls)),
     path('blackList/<str:pk>', BlackListItemCheck.as_view()),
     path('', include(CarParkItem_router.urls)),
+    path('', include(WorkingMode_router.urls)),
+    path('', include(AccessPoint_router.urls)),
 ]

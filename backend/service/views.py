@@ -27,3 +27,10 @@ class CarParkItemSet(viewsets.ModelViewSet):
     queryset = CarParkItem.objects.all()
     serializer_class = CarParkItemSerializers
 
+class WorkingModeSet(viewsets.ModelViewSet):
+    queryset = WorkingMode.objects.all()
+    serializer_class = WorkingModeSerializers
+
+class AccessPointSet(viewsets.ModelViewSet):
+    queryset = AccessPoint.objects.all()
+    serializer_class = AccessPointSerializers
