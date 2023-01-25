@@ -13,7 +13,7 @@ HOST='Адрес БД'
 PORT='Порт БД'
 
 Разворачиваем проект командой
-docker-kompose up --build
+docker-compose up --build
 
 entrypoint.sh <- здесь можно отредактировать бинд на запуск по какому адресу (0.0.0.0:8000 стандартный запуск)
 gunicorn config.wsgi:application --bind 0.0.0.0:8000
